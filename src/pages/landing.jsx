@@ -1,8 +1,10 @@
+import Waitlist from "../components/waitlist_form";
 
 const HomePage = () => {
   return (
     <div className="w-full flex flex-col min-h-screen bg-gray-100">
       {/* Header */}
+      <Waitlist />
       <header className="bg-blue-600 text-white py-4">
         <div className="container mx-auto px-6">
           <h1 className="text-3xl font-bold">My Tailwind React Page</h1>
