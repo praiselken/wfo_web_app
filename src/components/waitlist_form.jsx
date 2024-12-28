@@ -1,13 +1,32 @@
 import wfoLogo from "../assets/img/logo.jpg";
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOption,
+  ListboxOptions,
+} from "@headlessui/react";
+import { CheckIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
+import clsx from "clsx";
+import { useState } from "react";
 
 export default function Waitlist() {
+  const options = [
+    { id: 1, name: "Durward Reynolds" },
+    { id: 2, name: "Kenton Towne" },
+    { id: 3, name: "Therese Wunsch" },
+    { id: 4, name: "Benedict Kessler" },
+    { id: 5, name: "Katelyn Rohan" },
+  ];
+
+  const [selected, setSelected] = useState(options[0]);
+
   return (
     <>
       {/*
           This example requires updating your template:
   
           ```
-          <html class="h-full bg-gray-50">
+          <html class="h-full bg-neutral-50">
           <body class="h-full">
           ```
         */}
@@ -19,9 +38,9 @@ export default function Waitlist() {
           height="315"
           src="https://www.youtube.com/embed/bLD3OfVae3I?si=rejl1ACHf3kGHpEh"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
+          referrerPolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
@@ -42,7 +61,7 @@ export default function Waitlist() {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-neutral-900"
               >
                 Name
               </label>
@@ -53,14 +72,14 @@ export default function Waitlist() {
                   type="text"
                   required
                   autoComplete="name"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-neutral-900 outline outline-1 -outline-offset-1 outline-neutral-300 placeholder:text-neutral-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>
             </div>
             <div>
               <label
                 htmlFor="phone_number"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-neutral-900"
               >
                 Phone Number
               </label>
@@ -71,14 +90,14 @@ export default function Waitlist() {
                   type="integer"
                   required
                   autoComplete="phone_number"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-neutral-900 outline outline-1 -outline-offset-1 outline-neutral-300 placeholder:text-neutral-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>
             </div>
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-neutral-900"
               >
                 Email address
               </label>
@@ -89,7 +108,7 @@ export default function Waitlist() {
                   type="email"
                   required
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-neutral-900 outline outline-1 -outline-offset-1 outline-neutral-300 placeholder:text-neutral-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>
             </div>
@@ -97,7 +116,7 @@ export default function Waitlist() {
             <div>
               <label
                 htmlFor="gender"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-neutral-900"
               >
                 Gender
               </label>
@@ -108,14 +127,14 @@ export default function Waitlist() {
                   type="gender"
                   required
                   autoComplete="gender"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-neutral-900 outline outline-1 -outline-offset-1 outline-neutral-300 placeholder:text-neutral-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>
             </div>
             <div>
               <label
                 htmlFor="age"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-neutral-900"
               >
                 Age
               </label>
@@ -126,14 +145,14 @@ export default function Waitlist() {
                   type="integer"
                   required
                   autoComplete="age"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-neutral-900 outline outline-1 -outline-offset-1 outline-neutral-300 placeholder:text-neutral-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>
             </div>
             <div>
               <label
                 htmlFor="city-country"
-                className="block text-sm/6 font-medium text-gray-900"
+                className="block text-sm/6 font-medium text-neutral-900"
               >
                 City & Country of Residence
               </label>
@@ -144,28 +163,61 @@ export default function Waitlist() {
                   type="city-country"
                   required
                   autoComplete="city-country"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-neutral-900 outline outline-1 -outline-offset-1 outline-neutral-300 placeholder:text-neutral-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="dropdown">Choose an option:</label>
-              <select
-                id="dropdown"
-                value={selectedOption}
-                onChange={handleDropdownChange}
-                required
-              >
-                <option value="" disabled>
-                  -- Select an option --
-                </option>
-                {options.map((option, index) => (
-                  <option key={index} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
+                <label
+                  htmlFor="dropdown"
+                  className="block text-sm/6 font-medium text-neutral-900"
+                  >
+                  Choose an option:
+                </label>
+                <Listbox value={selected} onChange={setSelected}>
+                  <ListboxButton 
+                  className="relative text-left block w-full rounded-md bg-white px-3 py-1.5 text-base text-neutral-900 outline outline-1 -outline-offset-1 outline-neutral-300 placeholder:text-neutral-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">                  {selected.name}
+                    <ChevronDownIcon
+                      className="absolute top-2.5 right-2.5 h-5 w-5 text-neutral-400"
+                      aria-hidden="true"
+                    />
+                  </ListboxButton>
+                  <ListboxOptions 
+                  className="mt-1 max-h-60 w-full overflow-auto rounded-md bg-neutral-100 shadow-lg focus:outline-none">
+                    {options.map((option) => (
+                      <ListboxOption
+                        key={option.id}
+                        value={option}
+                        className={({ active }) =>
+                          clsx(
+                            "cursor-pointer select-none relative py-2 pl-3 pr-9",
+                            active ? "bg-neutral-200 text-black" : "text-black"
+                          )
+                        }
+                      >
+                        {({ selected }) => (
+                          <>
+                            <span
+                              className={clsx(
+                                "block truncate",
+                                selected && "font-semibold"
+                              )}
+                            >
+                              {option.name}
+                            </span>
+                            {selected && (
+                              <CheckIcon
+                                className="absolute inset-y-0 right-0 flex items-center pr-4 h-5 w-5 text-neutral-100"
+                                aria-hidden="true"
+                              />
+                            )}
+                          </>
+                        )}
+                      </ListboxOption>
+                    ))}
+                  </ListboxOptions>
+                </Listbox>
             </div>
 
             <div className="flex items-center justify-between">
@@ -175,7 +227,7 @@ export default function Waitlist() {
                     <svg
                       fill="none"
                       viewBox="0 0 14 14"
-                      className="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-[:disabled]:stroke-gray-950/25"
+                      className="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-[:disabled]:stroke-neutral-950/25"
                     >
                       <path
                         d="M3 8L6 11L11 3.5"
@@ -208,7 +260,7 @@ export default function Waitlist() {
           </form>
         </div>
         <div>
-          <p className="mt-10 text-center text-sm/6 text-gray-500">
+          <p className="mt-10 text-center text-sm/6 text-neutral-500">
             Not a member?{" "}
             <a
               href="#"
