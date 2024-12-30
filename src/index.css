@@ -16,6 +16,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Copperplate';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/Copperplate.otf') format('opentype');
+}
+
+.fontwfo {
+  font-family: 'Bebas Neue', sans-serif;
+}
 
 a {
   font-weight: 500;
