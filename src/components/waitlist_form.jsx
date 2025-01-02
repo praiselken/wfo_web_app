@@ -1,4 +1,6 @@
 import wfoLogo from "../assets/img/logo.jpg";
+import instaLogo from "../src/assets/img/insta.png";
+import tiktokLogo from "../src/assets/img/tiktok.png";
 import {
   Listbox,
   ListboxButton,
@@ -198,6 +200,43 @@ export default function Waitlist() {
             </div>
           </form>
         </div>
+      </div>
+      <div>
+        <div>
+          <p className="mt-10 text-center text-sm/6 text-neutral-500">
+            Not a member?{" "}
+            <a
+              href="#"
+              className="font-semibold text-[#F24CBE] hover:text-[#f562c6]"
+            >
+              Join our newsletter
+            </a>
+          </p>
+        </div>
+      </div>
+      <div>
+        <h2 className="text-center text-white text-2xl/9 font-bold tracking-tight pt-8">
+          Connect with Us!
+        </h2>
+        <p>
+          <a href="instagram.com" target="_blank" rel="noopener noreferrer"></a>
+          <img
+            src={instaLogo}
+            alt="Link to Instagram page"
+            style={{ width: "auto", height: "6rem", paddingTop: "2rem" }}
+          />
+
+          <a
+            href="https://www.instagram.com/wereflyinout?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+          <img
+            src={tiktokLogoLogo}
+            alt="https://www.tiktok.com/@wereflyinout?_t=8siap4CtgkC&_r=1"
+            style={{ width: "auto", height: "6rem", paddingTop: "2rem" }}
+          />
+        </p>
       </div>
     </>
   );
