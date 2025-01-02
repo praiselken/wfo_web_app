@@ -232,7 +232,7 @@ export default function Waitlist() {
             rel="noopener noreferrer"
           ></a>
           <img
-            src={tiktokLogoLogo}
+            src={tiktokLogo}
             alt="https://www.tiktok.com/@wereflyinout?_t=8siap4CtgkC&_r=1"
             style={{ width: "auto", height: "6rem", paddingTop: "2rem" }}
           />
