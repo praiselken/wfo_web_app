@@ -1,6 +1,6 @@
 import wfoLogo from "../assets/img/logo.jpg";
-import instaLogo from "../src/assets/img/insta.png";
-import tiktokLogo from "../src/assets/img/tiktok.png";
+import instaLogo from "../assets/img/insta.png";
+import tiktokLogo from "../assets/img/tiktok.png";
 import {
   Listbox,
   ListboxButton,
