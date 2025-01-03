@@ -1,6 +1,6 @@
 import wfoLogo from "../assets/img/logo.jpg";
-import instaLogo from "../assets/img/insta.png";
-import tiktokLogo from "../assets/img/tiktok.png";
+import instaLogo from "../assets/img/instagram-logo.svg";
+import tiktokLogo from "../assets/img/tiktok-icon.svg";
 import {
   Listbox,
   ListboxButton,
@@ -218,24 +218,37 @@ export default function Waitlist() {
         <h2 className="text-center text-white text-2xl/9 font-bold tracking-tight pt-8">
           Connect with Us!
         </h2>
-        <p>
-          <a href="instagram.com" target="_blank" rel="noopener noreferrer"></a>
-          <img
-            src={instaLogo}
-            alt="Link to Instagram page"
-            style={{ width: "auto", height: "6rem", paddingTop: "2rem" }}
-          />
-
+        <p
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "1rem",
+            paddingTop: "2rem",
+          }}
+        >
           <a
             href="https://www.instagram.com/wereflyinout?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
             rel="noopener noreferrer"
-          ></a>
-          <img
-            src={tiktokLogo}
-            alt="https://www.tiktok.com/@wereflyinout?_t=8siap4CtgkC&_r=1"
-            style={{ width: "auto", height: "6rem", paddingTop: "2rem" }}
-          />
+          >
+            <img
+              src={instaLogo}
+              alt="Link to Instagram page"
+              style={{ width: "auto", height: "6rem", cursor: "pointer" }}
+            />
+          </a>
+          <a
+            href="https://www.tiktok.com/@wereflyinout?_t=8siap4CtgkC&_r=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={tiktokLogo}
+              alt="Link to TikTok page"
+              style={{ width: "auto", height: "6rem", cursor: "pointer" }}
+            />
+          </a>
         </p>
       </div>
     </>
