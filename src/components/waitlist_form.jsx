@@ -1,5 +1,5 @@
 import wfoLogo from "../assets/img/logo.jpg";
-import instaLogo from "../assets/img/instagram-logo.svg";
+import instaLogo from "../assets/img/instagram-icon.svg";
 import tiktokLogo from "../assets/img/tiktok-icon.svg";
 import {
   Listbox,
