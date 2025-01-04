@@ -92,7 +92,7 @@ export default function Waitlist() {
             src={wfoLogo}
             className="mx-auto h-[6rem] w-auto pt-8"
           />
-          <h2 className=" mt-6 text-center text-2xl/9 font-bold tracking-tight text-white">
+          <h2 className=" mt-6 text-center text-2xl/9 font-bold tracking-tight text-white fontwfo">
             Join our Waitlist
           </h2>
         </div>
@@ -218,7 +218,7 @@ export default function Waitlist() {
           paddingBottom: "2rem", // Add padding at the bottom
         }}
       >
-        <h2 className="text-center text-white text-2xl/9 font-bold tracking-tight pt-8">
+        <h2 className="text-center text-white text-2xl/9 font-bold tracking-tight pt-8 fontwfo">
           Connect with Us!
         </h2>
         <p
