@@ -19,7 +19,6 @@ export default function Waitlist() {
     { id: 4, name: "Google Search" },
     { id: 5, name: "Word of mouth" },
   ];
-
   const [selected, setSelected] = useState(options[0]);
   const [formData, setFormData] = useState({
     name: "",
@@ -223,30 +222,85 @@ export default function Waitlist() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            gap: "1rem",
+            gap: "2rem",
             paddingTop: "2rem",
           }}
         >
+          {/* Instagram Link */}
           <a
             href="https://www.instagram.com/wereflyinout?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
             rel="noopener noreferrer"
+            style={{
+              position: "relative",
+              display: "inline-block",
+              width: "auto",
+              height: "4rem",
+            }}
           >
             <img
               src={instaLogo}
               alt="Link to Instagram page"
-              style={{ width: "auto", height: "6rem", cursor: "pointer" }}
+              style={{
+                width: "auto",
+                height: "4rem",
+                cursor: "pointer",
+                transition: "filter 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.filter =
+                  "brightness(0) saturate(100%) sepia(1) hue-rotate(-45deg) saturate(200%) contrast(1.2)";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.filter = "none";
+              }}
+              onMouseDown={(e) => {
+                e.target.style.filter =
+                  "brightness(0) saturate(100%) sepia(1) hue-rotate(90deg) saturate(300%) contrast(1.2)";
+              }}
+              onMouseUp={(e) => {
+                e.target.style.filter =
+                  "brightness(0) saturate(100%) sepia(1) hue-rotate(-45deg) saturate(200%) contrast(1.2)";
+              }}
             />
           </a>
+
+          {/* TikTok Link */}
           <a
             href="https://www.tiktok.com/@wereflyinout?_t=8siap4CtgkC&_r=1"
             target="_blank"
             rel="noopener noreferrer"
+            style={{
+              position: "relative",
+              display: "inline-block",
+              width: "auto",
+              height: "4rem",
+            }}
           >
             <img
               src={tiktokLogo}
               alt="Link to TikTok page"
-              style={{ width: "auto", height: "6rem", cursor: "pointer" }}
+              style={{
+                width: "auto",
+                height: "4rem",
+                cursor: "pointer",
+                transition: "filter 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.filter =
+                  "brightness(0) saturate(100%) sepia(1) hue-rotate(-45deg) saturate(200%) contrast(1.2)";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.filter = "none";
+              }}
+              onMouseDown={(e) => {
+                e.target.style.filter =
+                  "brightness(0) saturate(100%) sepia(1) hue-rotate(90deg) saturate(300%) contrast(1.2)";
+              }}
+              onMouseUp={(e) => {
+                e.target.style.filter =
+                  "brightness(0) saturate(100%) sepia(1) hue-rotate(-45deg) saturate(200%) contrast(1.2)";
+              }}
             />
           </a>
         </p>
