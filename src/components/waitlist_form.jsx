@@ -136,7 +136,7 @@ export default function Waitlist() {
             <div>
               <label
                 htmlFor="dropdown"
-                className="block text-sm/6 font-medium text-white"
+                className="block text-sm/6 font-medium text-white mb-1"
               >
                 How did you find out about us?
               </label>
