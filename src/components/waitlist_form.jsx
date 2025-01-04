@@ -92,7 +92,7 @@ export default function Waitlist() {
             src={wfoLogo}
             className="mx-auto h-[6rem] w-auto pt-8"
           />
-          <h2 className=" mt-6 text-center text-2xl/9 font-bold tracking-tight text-white fontwfo">
+          <h2 className=" mt-6 text-center text-2xl/9 font-bold tracking-tight text-white">
             Join our Waitlist
           </h2>
         </div>
