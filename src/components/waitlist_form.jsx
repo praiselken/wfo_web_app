@@ -213,7 +213,11 @@ export default function Waitlist() {
           </p>
         </div>
       </div>
-      <div>
+      <div
+        style={{
+          paddingBottom: "2rem", // Add padding at the bottom
+        }}
+      >
         <h2 className="text-center text-white text-2xl/9 font-bold tracking-tight pt-8">
           Connect with Us!
         </h2>
@@ -247,21 +251,6 @@ export default function Waitlist() {
                 cursor: "pointer",
                 transition: "filter 0.3s ease",
               }}
-              onMouseEnter={(e) => {
-                e.target.style.filter =
-                  "brightness(0) saturate(100%) sepia(1) hue-rotate(-45deg) saturate(200%) contrast(1.2)";
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.filter = "none";
-              }}
-              onMouseDown={(e) => {
-                e.target.style.filter =
-                  "brightness(0) saturate(100%) sepia(1) hue-rotate(90deg) saturate(300%) contrast(1.2)";
-              }}
-              onMouseUp={(e) => {
-                e.target.style.filter =
-                  "brightness(0) saturate(100%) sepia(1) hue-rotate(-45deg) saturate(200%) contrast(1.2)";
-              }}
             />
           </a>
 
@@ -285,21 +274,6 @@ export default function Waitlist() {
                 height: "4rem",
                 cursor: "pointer",
                 transition: "filter 0.3s ease",
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.filter =
-                  "brightness(0) saturate(100%) sepia(1) hue-rotate(-45deg) saturate(200%) contrast(1.2)";
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.filter = "none";
-              }}
-              onMouseDown={(e) => {
-                e.target.style.filter =
-                  "brightness(0) saturate(100%) sepia(1) hue-rotate(90deg) saturate(300%) contrast(1.2)";
-              }}
-              onMouseUp={(e) => {
-                e.target.style.filter =
-                  "brightness(0) saturate(100%) sepia(1) hue-rotate(-45deg) saturate(200%) contrast(1.2)";
               }}
             />
           </a>
