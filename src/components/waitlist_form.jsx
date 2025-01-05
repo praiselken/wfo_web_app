@@ -195,7 +195,7 @@ export default function Waitlist() {
             <div>
               <button
                 type="submit"
-                className="flex w-full font-semibold justify-center rounded-md bg-[#00f6ed]  px-6 py-6 text-sm/6 font-semibold text-white shadow-sm hover:bg-[#00e6f6] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="flex w-full font-semibold justify-center rounded-md bg-[#00f6ed] px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-[#00e6f6] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Submit
               </button>
