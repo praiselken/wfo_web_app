@@ -92,9 +92,9 @@ export default function Waitlist() {
             src={wfoLogo}
             className="mx-auto h-[6rem] w-auto pt-8"
           />
-          <H3 className=" mt-6 text-center text-2xl/9 font-bold tracking-tight text-white">
+          <h3 className=" mt-6 text-center text-2xl/9 font-bold tracking-tight text-white">
             This event is 21+ only
-          </H3>
+          </h3>
           <h2 className=" mt-6 text-center text-2xl/9 font-bold tracking-tight text-white">
             Join our Waitlist
           </h2>
