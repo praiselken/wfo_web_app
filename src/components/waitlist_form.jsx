@@ -199,6 +199,15 @@ export default function Waitlist() {
               >
                 Submit
               </button>
+              <p className="mt-10 text-center text-sm/6 text-neutral-500">
+                By submitting this form, you agree to our{" "}
+                <a
+                  href="#"
+                  className="font-semibold text-[#F24CBE] hover:text-[#f562c6]"
+                >
+                  Terms and Conditions.
+                </a>
+              </p>
             </div>
           </form>
         </div>
