@@ -205,6 +205,23 @@ export default function Waitlist() {
       </div>
       <div>
         <div>
+          <p className="mt-10 py- text-center text-sm/6 text-neutral-500">
+            By submitting this form, you agree to our{" "}
+            <a
+              href="#"
+              className="font-semibold text-[#F24CBE] hover:text-[#f562c6]"
+            >
+              Terms and Conditions.
+            </a>
+          </p>
+        </div>
+      </div>
+      <div
+        style={{
+          paddingBottom: "2rem", // Add padding at the bottom
+        }}
+      >
+        <div>
           <p className="mt-10 text-center text-sm/6 text-neutral-500">
             Not a member?{" "}
             <a
