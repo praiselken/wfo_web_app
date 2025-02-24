@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from React Router
 
 const Hero = () => {
   return (
@@ -21,9 +22,12 @@ const Hero = () => {
               </p>
               {/* buttom section */}
               <div className="flex justify-center items-center gap-8 md:justify-start !mt-4">
-                <button className="flex items-center gap-2 mt-4 fontwfo border border-[#CDF239] text-[#CDF239] bg-transparent">
+                <Link
+                  to="/tickets"
+                  className="flex items-center gap-2 mt-4 fontwfo border border-[#CDF239] text-[#CDF239] bg-transparent px-4 py-2 rounded-md hover:bg-[#CDF239] hover:text-black transition"
+                >
                   Get Tickets here
-                </button>
+                </Link>
               </div>
             </div>
           </div>

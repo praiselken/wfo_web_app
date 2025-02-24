@@ -8,7 +8,7 @@ import VideoBackground from "./components/videobg.jsx";
 import Tickets from "./pages/tickets.jsx";
 import Gallery from "./pages/gallery.jsx";
 import ContactUs from "./pages/contact_us.jsx";
-import Landing from "./pages/landing.jsx";
+import Home from "./pages/home.jsx";
 
 function App() {
   console.log("App is rendering"); // Debugging log
@@ -16,7 +16,7 @@ function App() {
     <>
       <Router>
         {/* Video Background - Stays Fixed Behind Everything */}
-        <VideoBackground />
+        <VideoBackground className="-z-10" />
 
         {/* Main Content Wrapper - Allows Scrolling */}
         <div className="relative w-full min-h-screen overflow-x-hidden overflow-y-auto">
@@ -32,7 +32,7 @@ function App() {
           {/* Main Content - Positioned ABOVE the video */}
           <div className="relative z-10 flex flex-col items-center justify-start text-white pt-24 pb-20">
             <Routes>
-              <Route path="/" element={<Landing />} />
+              <Route path="/home" element={<Home />} />
               {/* {console.log("Routes rendering")} Debugging log */}
               <Route path="/tickets" element={<Tickets />} />
               <Route path="/gallery" element={<Gallery />} />
