@@ -4,6 +4,7 @@ import { useState } from "react";
 // import Landing from "./pages/landing.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/navigation.jsx";
+import Hero from "./components/hero.jsx";
 import VideoBackground from "./components/videobg.jsx";
 import Tickets from "./pages/tickets.jsx";
 import Gallery from "./pages/gallery.jsx";
@@ -26,6 +27,11 @@ function App() {
           {/* Navigation - Ensures it stays clickable */}
           <div className="fixed top-0 left-0 w-full z-50">
             <Navigation />
+          </div>
+
+          {/* Hero  */}
+          <div className="relative z-10 flex flex-col items-center">
+            <Hero />
           </div>
 
           {/* Main Content - Positioned ABOVE the video */}
