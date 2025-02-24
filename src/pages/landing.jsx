@@ -1,13 +1,10 @@
-import Waitlist from "../components/waitlist_form";
+import Hero from "../components/Hero";
+import React from "react";
 
-
-const HomePage = () => {
+export default function LandingPage() {
   return (
-    <div className="w-full flex flex-col min-h-screen bg-neutral-900">
-      {/* Header */}
-      <Waitlist />
+    <div>
+      <Hero />
     </div>
   );
-};
-
-export default HomePage;
+}

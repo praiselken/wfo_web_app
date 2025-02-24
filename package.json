@@ -14,8 +14,10 @@
     "@heroicons/react": "^2.2.0",
     "@react-spring/web": "^9.7.5",
     "@react-three/fiber": "^8.17.10",
+    "framer-motion": "^12.4.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^7.2.0",
     "three": "^0.171.0"
   },
   "devDependencies": {

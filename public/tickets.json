@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "image": "vipdeposit.jpg",
+      "link": "https://buy.stripe.com/8wM2c0fMec0ye7S001",
+      "text": "VIP Deposit"
+    },
+    {
+      "id": 2,
+      "image": "standardDeposit.jpg",
+      "link": "https://buy.stripe.com/eVaeYMdE6e8G7JuaEE",
+      "text": "Standard Deposit"
+    },
+    {
+      "id": 3,
+      "image": "earlydeposit.jpg",
+      "link": "https://buy.stripe.com/bIYg2QgQifcK6FqdQV",
+      "text": "Early Bird Deposit"
+    }
+  ]
+  
+  

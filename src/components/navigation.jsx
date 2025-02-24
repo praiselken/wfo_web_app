@@ -2,138 +2,73 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
 } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import wfoLogo from "../assets/img/logo.jpg";
-import { UserCircleIcon } from "@heroicons/react/20/solid";
+// import { XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
+import wfoLogo from "../assets/img/whitewfo.svg";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "About Us", href: "#", current: false },
-  { name: "Gallery", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
-  { name: "Contact Us", href: "#", current: false },
+  { name: "Home", to: "landing" },
+  { name: "Tickets", to: "/tickets" },
+  { name: "Gallery", to: "/gallery" },
+  { name: "Contact Us", to: "/contact_us" },
 ];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default function Navigation() {
   return (
-    <Disclosure as="nav" className="bg-neutral-950">
+    <Disclosure
+      as="nav"
+      className="nav-app fontwfo bg-transparent border-none z-50 relative"
+    >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center bg-neutral-950 justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-[#f24cbe] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-              <span className="absolute -inset-0.5" />
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon
-                aria-hidden="true"
-                className="block size-6 group-data-[open]:hidden"
-              />
-              <XMarkIcon
-                aria-hidden="true"
-                className="hidden size-6 group-data-[open]:block"
-              />
-            </DisclosureButton>
+          {/* Logo */}
+          <div className="flex items-center gap-1">
+            <img alt="Your Company" src={wfoLogo} className="h-10 w-auto" />
           </div>
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex shrink-0 items-center">
-              <img alt="Your Company" src={wfoLogo} className="h-8 w-auto" />
-            </div>
-            <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    aria-current={item.current ? "page" : undefined}
-                    className={classNames(
-                      item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-[#f24cbe]",
-                      "rounded-md hover:text-[#F24CBE] px-3 py-2 text-sm font-medium"
-                    )}
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button
-              type="button"
-              className="relative rounded-full bg-neutral-950 p-1 text-white hover:bg-gray-300 hover:text-[#F24CBE] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-            >
-              <span className="absolute -inset-1.5" />
-              <span className="sr-only">View notifications</span>
-              <BellIcon aria-hidden="true" className="size-6" />
-            </button>
 
-            {/* Profile dropdown */}
-            <Menu as="div" className="relative ml-3">
-              <div>
-                <MenuButton className="relative flex text-white rounded-full bg-neutral-950 text-sm hover:text-[#F24CBE] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                  <span className="absolute -inset-1.5" />
-                  <span className="sr-only">Open user menu</span>
-                  <UserCircleIcon aria-hidden="true" className="size-6 " />
-                </MenuButton>
-              </div>
-              <MenuItems
-                transition
-                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+          {/* Desktop Navigation */}
+          <div className="hidden sm:flex space-x-4">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.to}
+                className="text-white hover:text-[#f24cbe] px-3 py-2 text-xl font-medium"
               >
-                <MenuItem>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
-                  >
-                    Your Profile
-                  </a>
-                </MenuItem>
-                <MenuItem>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
-                  >
-                    Settings
-                  </a>
-                </MenuItem>
-                <MenuItem>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:outline-none"
-                  >
-                    Sign out
-                  </a>
-                </MenuItem>
-              </MenuItems>
-            </Menu>
+                {item.name}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="sm:hidden">
+            <DisclosureButton className="bg-none text-white hover:text-[#f24cbe] focus:outline-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="size-6"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </DisclosureButton>
           </div>
         </div>
       </div>
 
+      {/* Mobile Menu Panel */}
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pb-3 pt-2">
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
-              as="a"
-              href={item.href}
-              aria-current={item.current ? "page" : undefined}
-              className={classNames(
-                item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium"
-              )}
+              as={Link}
+              to={item.to}
+              className="block px-3 py-2 fontwfo font-medium text-white hover:text-[#f24cbe]"
             >
               {item.name}
             </DisclosureButton>
