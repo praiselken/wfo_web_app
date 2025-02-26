@@ -1,10 +1,12 @@
 import React from "react";
+import ContactForm from "../components/contactForm";
 
 export default function ContactUs() {
   return (
     <div className="text-white fontwfo text-center p-10">
-      <h1>Contact Us</h1>
-      <p>Get in touch with us.</p>
+      <h1>Get in touch with us.</h1>
+
+      <ContactForm />
     </div>
   );
 }
