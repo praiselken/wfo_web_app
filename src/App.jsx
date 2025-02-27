@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-// import "./App.css";
-// import Landing from "./pages/landing.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/navigation.jsx";
 import VideoBackground from "./components/videobg.jsx";

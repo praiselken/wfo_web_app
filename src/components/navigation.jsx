@@ -42,7 +42,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <div className="sm:hidden">
-            <DisclosureButton className="bg-none text-white hover:text-[#f24cbe] focus:outline-none">
+            <DisclosureButton className="bg-transparent text-white hover:text-[#f24cbe] focus:outline-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
