@@ -2,21 +2,52 @@
     {
       "id": 1,
       "image": "earlydeposit.jpg",
+      "link": "https://buy.stripe.com/aEUaIwdE6d4CfbWdQU",
+      "text": "Early Bird Party Pass"
+    },
+    {
+      "id": 2,
+      "image": "earlybirdVipPass.jpg",
+      "link": "hhttps://buy.stripe.com/aEU3g46bEd4C0h2fZ0",
+      "text": "Early Bird VIP Party Pass"
+    },
+    {
+      "id": 3,
+      "image": "standardPartyPass.jpg",
+      "link": "https://buy.stripe.com/8wM5oc6bE1lUgg05kn",
+      "text": "Standard Party Pass"
+    },
+    {
+      "id": 4,
+      "image": "vipPartyPass.jpg",
+      "link": "https://buy.stripe.com/aEU9EsgQi2pYaVGfZ4",
+      "text": "VIP Party Pass"
+    },
+    {
+      "id": 5,
+      "image": "earlydeposit.jpg",
       "link": "https://buy.stripe.com/bIYg2QgQifcK6FqdQV",
       "text": "Early Bird Deposit"
     },
     {
-      "id": 2,
-      "image": "standardDeposit.jpg",
+      "id": 6,
+      "image": "earlybirdVipPass.jpg",
+      "link": "https://buy.stripe.com/28o7wk0Rk7KifbWaEL",
+      "text": "Early Bird VIP Deposit"
+    },
+    {
+      "id": 7,
+      "image": "standardPartyPass.jpg",
       "link": "https://buy.stripe.com/eVaeYMdE6e8G7JuaEE",
       "text": "Standard Deposit"
     },
     {
-      "id": 3,
-      "image": "vipdeposit.jpg",
+      "id": 8,
+      "image": "vipPartyPass.jpg",
       "link": "https://buy.stripe.com/8wM2c0fMec0ye7S001",
       "text": "VIP Deposit"
     }
+
   ]
   
   
