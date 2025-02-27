@@ -20,7 +20,7 @@ function App() {
       {/* Main Content Wrapper - Allows Scrolling */}
       <div className="relative w-full min-h-screen overflow-x-hidden overflow-y-auto">
         {/* Overlay to darken the background but NOT block interactions */}
-        <div className="fixed inset-0 bg-black opacity-55 pointer-events-none"></div>
+        <div className="fixed inset-0 bg-black opacity-65 pointer-events-none"></div>
 
         {/* Navigation - Ensures it stays clickable */}
         <div className="fixed top-0 left-0 w-full z-50">

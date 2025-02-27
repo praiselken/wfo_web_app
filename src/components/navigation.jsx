@@ -18,7 +18,7 @@ export default function Navigation() {
   return (
     <Disclosure
       as="nav"
-      className="nav-app fontwfo bg-transparent border-none z-50 relative"
+      className="nav-app fontwfo bg-#000000 border-none z-50 relative"
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">

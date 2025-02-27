@@ -17,8 +17,8 @@ const Hero = () => {
                 The Experience
               </h1>
               <p className="text-[#CDF239] fontwfo xl:max-w-[500px]">
-                Join us in Marbella, Spain for the ultimate May Bank Holiday
-                Experience
+                Join us in Marbella, Spain from MAY 23RD-26TH for the ultimate
+                Bank Holiday Experience
               </p>
               {/* buttom section */}
               <div className="flex justify-center items-center gap-8 md:justify-start !mt-4">
