@@ -1,6 +1,11 @@
-import { useState } from "react";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Navigation from "./components/navigation.jsx";
 import VideoBackground from "./components/videobg.jsx";
 import Tickets from "./pages/tickets.jsx";
@@ -9,9 +14,24 @@ import ContactUs from "./pages/contact_us.jsx";
 import Hero from "./components/hero.jsx";
 import Home from "./pages/home.jsx";
 
+const TRACKING_ID = "G-4JNCM6830L"; // Replace with your actual GA Measurement ID
+ReactGA.initialize(TRACKING_ID);
+
+function AnalyticsTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <AnalyticsTracker />
+
       {/* Video Background - Stays Fixed Behind Everything */}
       <VideoBackground className="-z-10" />
 
