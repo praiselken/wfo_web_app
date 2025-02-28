@@ -43,18 +43,36 @@
     },
     {
       "id": 8,
+      "image": "Waves.jpg",
+      "link": "https://buy.stripe.com/fZedUI43w1lU7Ju5ks",
+      "text": "Waved on Waves Boat Party"
+    },
+    {
+      "id": 9,
+      "image": "Midnight.jpg",
+      "link": "https://buy.stripe.com/9AQ03S1Vo3u2d3O5kt",
+      "text": "Midnight Breeze Club Night"
+    },
+    {
+      "id": 10,
+      "image": "earlydeposit.jpg",
+      "link": "https://buy.stripe.com/bIYg2QgQifcK6FqdQV",
+      "text": "Early Bird  Deposit"
+    },
+    {
+      "id": 10,
       "image": "earlybirdVipPass.jpg",
       "link": "https://buy.stripe.com/28o7wk0Rk7KifbWaEL",
       "text": "Early Bird VIP Deposit"
     },
     {
-      "id": 9,
+      "id": 11,
       "image": "standardPartyPass.jpg",
       "link": "https://buy.stripe.com/eVaeYMdE6e8G7JuaEE",
       "text": "Standard Deposit"
     },
     {
-      "id": 10,
+      "id": 12,
       "image": "vipPartyPass.jpg",
       "link": "https://buy.stripe.com/8wM2c0fMec0ye7S001",
       "text": "VIP Deposit"
