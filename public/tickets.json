@@ -8,7 +8,7 @@
     {
       "id": 2,
       "image": "earlybirdVipPass.jpg",
-      "link": "hhttps://buy.stripe.com/aEU3g46bEd4C0h2fZ0",
+      "link": "https://buy.stripe.com/aEU3g46bEd4C0h2fZ0",
       "text": "Early Bird VIP Party Pass"
     },
     {
@@ -25,28 +25,38 @@
     },
     {
       "id": 5,
-      "image": "earlydeposit.jpg",
-      "link": "https://buy.stripe.com/bIYg2QgQifcK6FqdQV",
-      "text": "Early Bird Deposit"
+      "image": "Sea&Sand.jpg",
+      "link": "https://buy.stripe.com/bIY9Es2Zs2pY1l6cMY",
+      "text": "Sea & Sand Beach Party"
     },
     {
       "id": 6,
+      "image": "PalmTrees.jpg",
+      "link": "https://buy.stripe.com/fZe9EsbvY8Omd3OfZ8",
+      "text": "Palm Trees & Daquiri's Day Party"
+    },
+    {
+      "id": 7,
+      "image": "Sunset.jpg",
+      "link": "https://buy.stripe.com/00g6sg57Ac0yfbWeV5",
+      "text": "Sunset To Sunrise Club Night"
+    },
+    {
+      "id": 8,
       "image": "earlybirdVipPass.jpg",
       "link": "https://buy.stripe.com/28o7wk0Rk7KifbWaEL",
       "text": "Early Bird VIP Deposit"
     },
     {
-      "id": 7,
+      "id": 9,
       "image": "standardPartyPass.jpg",
       "link": "https://buy.stripe.com/eVaeYMdE6e8G7JuaEE",
       "text": "Standard Deposit"
     },
     {
-      "id": 8,
+      "id": 10,
       "image": "vipPartyPass.jpg",
       "link": "https://buy.stripe.com/8wM2c0fMec0ye7S001",
       "text": "VIP Deposit"
     }
   ]
-  
-  
