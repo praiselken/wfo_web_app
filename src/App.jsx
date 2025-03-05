@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ReactGA from "react-ga4";
 import {
   BrowserRouter as Router,
@@ -28,8 +28,15 @@ function AnalyticsTracker() {
 }
 
 function App() {
+  const [isSnapchat, setIsSnapchat] = useState(false);
+
   useEffect(() => {
-    if (navigator.userAgent.includes("Snapchat")) {
+    // Check if the user is on Snapchat
+    if (
+      typeof navigator !== "undefined" &&
+      navigator.userAgent.includes("Snapchat")
+    ) {
+      setIsSnapchat(true);
       document.body.classList.add("snapchat-fix");
     }
   }, []);
