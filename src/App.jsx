@@ -28,6 +28,12 @@ function AnalyticsTracker() {
 }
 
 function App() {
+  useEffect(() => {
+    if (navigator.userAgent.includes("Snapchat")) {
+      document.body.classList.add("snapchat-fix");
+    }
+  }, []);
+
   return (
     <Router>
       <AnalyticsTracker />

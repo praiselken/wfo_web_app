@@ -57,6 +57,10 @@ video {
 
 }
 
+.snapchat-fix {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 
 .fontwfo {
   font-family: 'Bebas Neue', sans-serif;
