@@ -10,7 +10,7 @@ export default function ContactUs() {
           className="text-[#f24cbe]"
           href="https://www.instagram.com/wereflyinout?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
         >
-          @wereflyingout
+          @wereflyinout
         </a>
       </h1>
 

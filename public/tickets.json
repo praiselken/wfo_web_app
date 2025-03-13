@@ -1,80 +1,65 @@
 [
     {
       "id": 1,
-      "image": "earlydeposit.jpg",
-      "link": "https://buy.stripe.com/aEUaIwdE6d4CfbWdQU",
-      "text": "Early Bird Party Pass"
+      "image": "standardPartyPass.jpg",
+      "link": "https://buy.stripe.com/8wM5oc6bE1lUgg05kn",
+      "text": "Standard Party Pass",
+      "extraText": "£"
     },
     {
       "id": 2,
-      "image": "earlybirdVipPass.jpg",
-      "link": "https://buy.stripe.com/aEU3g46bEd4C0h2fZ0",
-      "text": "Early Bird VIP Party Pass"
+      "image": "vipPartyPass.jpg",
+      "link": "https://buy.stripe.com/aEU9EsgQi2pYaVGfZ4",
+      "text": "VIP Party Pass",
+      "extraText": "Includes backstage access!"
     },
     {
       "id": 3,
-      "image": "standardPartyPass.jpg",
-      "link": "https://buy.stripe.com/8wM5oc6bE1lUgg05kn",
-      "text": "Standard Party Pass"
+      "image": "Sea&Sand.jpg",
+      "link": "https://buy.stripe.com/bIY9Es2Zs2pY1l6cMY",
+      "text": "Sea & Sand Beach Party",
+      "extraText": "Includes backstage access!"
     },
     {
       "id": 4,
-      "image": "vipPartyPass.jpg",
-      "link": "https://buy.stripe.com/aEU9EsgQi2pYaVGfZ4",
-      "text": "VIP Party Pass"
+      "image": "PalmTrees.jpg",
+      "link": "https://buy.stripe.com/fZe9EsbvY8Omd3OfZ8",
+      "text": "Palm Trees & Daquiri's Day Party",
+      "extraText": "Includes backstage access!"
     },
     {
       "id": 5,
-      "image": "Sea&Sand.jpg",
-      "link": "https://buy.stripe.com/bIY9Es2Zs2pY1l6cMY",
-      "text": "Sea & Sand Beach Party"
+      "image": "Sunset.jpg",
+      "link": "https://buy.stripe.com/00g6sg57Ac0yfbWeV5",
+      "text": "Sunset To Sunrise Club Night",
+      "extraText": "Includes backstage access!"
     },
     {
       "id": 6,
-      "image": "PalmTrees.jpg",
-      "link": "https://buy.stripe.com/fZe9EsbvY8Omd3OfZ8",
-      "text": "Palm Trees & Daquiri's Day Party"
+      "image": "Waves.jpg",
+      "link": "https://buy.stripe.com/fZedUI43w1lU7Ju5ks",
+      "text": "Waved on Waves Boat Party",
+      "extraText": "Includes backstage access!"
     },
     {
       "id": 7,
-      "image": "Sunset.jpg",
-      "link": "https://buy.stripe.com/00g6sg57Ac0yfbWeV5",
-      "text": "Sunset To Sunrise Club Night"
+      "image": "Midnight.jpg",
+      "link": "https://buy.stripe.com/9AQ03S1Vo3u2d3O5kt",
+      "text": "Midnight Breeze Club Night",
+      "extraText": "Includes backstage access!"
     },
     {
       "id": 8,
-      "image": "Waves.jpg",
-      "link": "https://buy.stripe.com/fZedUI43w1lU7Ju5ks",
-      "text": "Waved on Waves Boat Party"
+      "image": "standardPartyPass.jpg",
+      "link": "https://buy.stripe.com/eVaeYMdE6e8G7JuaEE",
+      "text": "Standard Deposit",
+      "extraText": "Includes backstage access!"
     },
     {
       "id": 9,
-      "image": "Midnight.jpg",
-      "link": "https://buy.stripe.com/9AQ03S1Vo3u2d3O5kt",
-      "text": "Midnight Breeze Club Night"
-    },
-    {
-      "id": 10,
-      "image": "earlydeposit.jpg",
-      "link": "https://buy.stripe.com/bIYg2QgQifcK6FqdQV",
-      "text": "Early Bird  Deposit"
-    },
-    {
-      "id": 10,
-      "image": "earlybirdVipPass.jpg",
-      "link": "https://buy.stripe.com/28o7wk0Rk7KifbWaEL",
-      "text": "Early Bird VIP Deposit"
-    },
-    {
-      "id": 11,
-      "image": "standardPartyPass.jpg",
-      "link": "https://buy.stripe.com/eVaeYMdE6e8G7JuaEE",
-      "text": "Standard Deposit"
-    },
-    {
-      "id": 12,
       "image": "vipPartyPass.jpg",
       "link": "https://buy.stripe.com/8wM2c0fMec0ye7S001",
-      "text": "VIP Deposit"
+      "text": "VIP Deposit",
+      "extraText": "Includes backstage access!"
     }
   ]
