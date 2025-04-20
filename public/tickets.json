@@ -4,62 +4,72 @@
       "image": "standardPartyPass.jpg",
       "link": "https://buy.stripe.com/8wM5oc6bE1lUgg05kn",
       "text": "Standard Party Pass",
-      "extraText": "£"
+      "extraText": "£",
+      "price":"149"
     },
     {
       "id": 2,
       "image": "vipPartyPass.jpg",
       "link": "https://buy.stripe.com/aEU9EsgQi2pYaVGfZ4",
       "text": "VIP Party Pass",
-      "extraText": "Includes backstage access!"
+      "extraText": "Includes backstage access!",
+      "price": "199"
     },
     {
       "id": 3,
       "image": "Sea&Sand.jpg",
       "link": "https://buy.stripe.com/bIY9Es2Zs2pY1l6cMY",
       "text": "Sea & Sand Beach Party",
-      "extraText": "Includes backstage access!"
+      "extraText": "Includes backstage access!",
+      "price": "49"
     },
     {
       "id": 4,
       "image": "PalmTrees.jpg",
       "link": "https://buy.stripe.com/fZe9EsbvY8Omd3OfZ8",
       "text": "Palm Trees & Daquiri's Day Party",
-      "extraText": "Includes backstage access!"
+      "extraText": "Includes backstage access!",
+       "price": "49"
     },
     {
       "id": 5,
       "image": "Sunset.jpg",
       "link": "https://buy.stripe.com/00g6sg57Ac0yfbWeV5",
       "text": "Sunset To Sunrise Club Night",
-      "extraText": "Includes backstage access!"
+      "extraText": "Includes backstage access!",
+       "price": "59"
     },
     {
       "id": 6,
       "image": "Waves.jpg",
       "link": "https://buy.stripe.com/fZedUI43w1lU7Ju5ks",
       "text": "Waved on Waves Boat Party",
-      "extraText": "Includes backstage access!"
+      "extraText": "Includes backstage access!",
+       "price": "59"
     },
     {
       "id": 7,
       "image": "Midnight.jpg",
       "link": "https://buy.stripe.com/9AQ03S1Vo3u2d3O5kt",
       "text": "Midnight Breeze Club Night",
-      "extraText": "Includes backstage access!"
+      "extraText": "Includes backstage access!",
+       "price": "59"
     },
     {
       "id": 8,
       "image": "standardPartyPass.jpg",
       "link": "https://buy.stripe.com/eVaeYMdE6e8G7JuaEE",
       "text": "Standard Deposit",
-      "extraText": "Includes backstage access!"
+      "extraText": "Includes backstage access!",
+      "price": "49"
+
     },
     {
       "id": 9,
       "image": "vipPartyPass.jpg",
       "link": "https://buy.stripe.com/8wM2c0fMec0ye7S001",
       "text": "VIP Deposit",
-      "extraText": "Includes backstage access!"
+      "extraText": "Includes backstage access!",
+      "price": "49"
     }
   ]
