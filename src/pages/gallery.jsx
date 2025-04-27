@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
 const galleryImages = [
-  "../public/gallery/group patron boat pic.JPG",
-  "../public/gallery/3 girls with bottles on head.JPG",
-  "../public/gallery/huge group boat pic.JPG",
-  "../public/gallery/patron hand pic.JPG",
+  "/gallery/group patron boat pic.JPG",
+  "/gallery/3 girls with bottles on head.JPG",
+  "/gallery/huge group boat pic.JPG",
+  "/gallery/patron hand pic.JPG",
 ];
 
 export default function Gallery() {
@@ -19,19 +19,21 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-lg">
+    <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-lg h-96">
+      {/* IMAGES */}
       {galleryImages.map((img, index) => (
         <img
           key={index}
           src={img}
           alt={`Slide ${index}`}
-          className={`w-full h-96 object-cover transition-opacity duration-1000 ${
-            index === current ? "opacity-100" : "opacity-0"
+          className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+            index === current ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         />
       ))}
-      {/* Optional: Add navigation buttons */}
-      <div className="absolute inset-0 flex items-center justify-between p-4">
+
+      {/* NAVIGATION BUTTONS - always on top */}
+      <div className="absolute inset-0 flex items-center justify-between p-4 z-20">
         <button
           onClick={() =>
             setCurrent(

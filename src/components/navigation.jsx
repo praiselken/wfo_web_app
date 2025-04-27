@@ -23,7 +23,7 @@ export default function Navigation() {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 p-4">
             <img alt="Your Company" src={wfoLogo} className="h-10 w-auto" />
           </div>
 
@@ -42,7 +42,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <div className="sm:hidden">
-            <DisclosureButton className="bg-transparent text-white hover:text-[#f24cbe] focus:outline-none">
+            <DisclosureButton className=" bg-transparent text-white hover:text-[#f24cbe] focus:outline-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
