@@ -1,18 +1,54 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 
-// Replace these with your actual image paths (put them in /public/gallery/)
 const galleryImages = [
-  "/gallery/image1.jpg",
-  "/gallery/image2.jpg",
-  "/gallery/image3.jpg",
-  "/gallery/image4.jpg",
+  "../public/gallery/group patron boat pic.JPG",
+  "../public/gallery/3 girls with bottles on head.JPG",
+  "../public/gallery/huge group boat pic.JPG",
+  "../public/gallery/patron hand pic.JPG",
 ];
 
 export default function Gallery() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1));
+    }, 3000); // change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="text-white fontwfo text-center p-10">
-      <h1>Gallery Page</h1>
-      <p>Content incoming..</p>
+    <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-lg">
+      {galleryImages.map((img, index) => (
+        <img
+          key={index}
+          src={img}
+          alt={`Slide ${index}`}
+          className={`w-full h-96 object-cover transition-opacity duration-1000 ${
+            index === current ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      ))}
+      {/* Optional: Add navigation buttons */}
+      <div className="absolute inset-0 flex items-center justify-between p-4">
+        <button
+          onClick={() =>
+            setCurrent(
+              (current - 1 + galleryImages.length) % galleryImages.length
+            )
+          }
+          className="bg-black bg-opacity-30 text-white p-2 rounded-full hover:bg-opacity-50"
+        >
+          ‹
+        </button>
+        <button
+          onClick={() => setCurrent((current + 1) % galleryImages.length)}
+          className="bg-black bg-opacity-30 text-white p-2 rounded-full hover:bg-opacity-50"
+        >
+          ›
+        </button>
+      </div>
     </div>
   );
 }

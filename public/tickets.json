@@ -5,7 +5,7 @@
       "link": "https://buy.stripe.com/8wM5oc6bE1lUgg05kn",
       "text": "Standard Party Pass",
       "extraText": "£",
-      "price":"149"
+      "price":"199"
     },
     {
       "id": 2,
@@ -13,7 +13,7 @@
       "link": "https://buy.stripe.com/aEU9EsgQi2pYaVGfZ4",
       "text": "VIP Party Pass",
       "extraText": "Includes backstage access!",
-      "price": "199"
+      "price": "349"
     },
     {
       "id": 3,
