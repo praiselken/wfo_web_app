@@ -11,8 +11,9 @@ import VideoBackground from "./components/videobg.jsx";
 import Tickets from "./pages/tickets.jsx";
 import Gallery from "./pages/gallery.jsx";
 import ContactUs from "./pages/contact_us.jsx";
-import Hero from "./components/hero.jsx";
+import Hero from "./sections/hero.jsx";
 import Home from "./pages/home.jsx";
+// import Footer from "./components/footer.jsx";
 
 const TRACKING_ID = "G-4JNCM6830L"; // Replace with your actual GA Measurement ID
 ReactGA.initialize(TRACKING_ID);
@@ -70,6 +71,9 @@ function App() {
           </Routes>
         </div>
       </div>
+
+      {/* Footer - Stays at the bottom */}
+      {/* <Footer /> */}
     </Router>
   );
 }

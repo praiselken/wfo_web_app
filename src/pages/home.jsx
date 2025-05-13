@@ -1,5 +1,4 @@
-import React from "react";
-import Hero from "../components/hero.jsx";
+import Hero from "../sections/hero.jsx";
 
 export default function Home() {
   console.log("Home component is rendering"); // Debugging log

@@ -1,5 +1,3 @@
-// import { DEFAULT } from '@react-three/fiber/dist/declarations/src/core/utils';
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -17,6 +15,18 @@ export default {
           xl: "5rem",
           '2xl': "6rem",
         },
+      },
+      keyframes: {
+        flashColors: {
+          '0%': { color: '#CDF239' },
+          '25%': { color: '#F24CBE' },
+          '50%': { color: '#00F6ED' },
+          '75%': { color: '#81089F' },
+          '100%': { color: '#CDF239' },
+        },
+      },
+      animation: {
+        flash: 'flashColors 2s infinite',
       },
     },
   },
