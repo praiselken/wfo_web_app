@@ -31,7 +31,7 @@ export default function ContactForm() {
 
   return (
     <div className="max-w-lg mx-auto p-6 bg-transparent rounded-md">
-      <h2 className="text-2xl font-bold mb-4 text-[#CDF239]">Contact Us</h2>
+      <h2 className="text-2xl font-bold mb-4 text-[#FFFFFF]">Contact Us</h2>
       {success && <p className="text-green-600">Message sent successfully!</p>}
       {error && <p className="text-red-600">{error}</p>}
 
@@ -43,7 +43,7 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="w-full p-2 border bg-transparent border-[#CDF239] text-[#CDF239] rounded"
+          className="w-full p-2 border bg-transparent border-[#FFFFFF] text-[#FFFFFF] rounded"
         />
 
         <input
@@ -53,7 +53,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full p-2 border bg-transparent border-[#CDF239] text-[#CDF239] rounded"
+          className="w-full p-2 border bg-transparent border-[#FFFFFF] text-[#FFFFFF] rounded"
         />
 
         <textarea
@@ -62,12 +62,12 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           required
-          className="w-full p-2 border bg-transparent border-[#CDF239] text-[#CDF239] rounded"
+          className="w-full p-2 border bg-transparent border-[#FFFFFF] text-[#FFFFFF] rounded"
         ></textarea>
 
         <button
           type="submit"
-          className="flex items-center gap-2 mt-4 fontwfo border border-[#CDF239] text-[#CDF239] bg-transparent px-4 py-2 rounded-md hover:bg-[#CDF239] hover:text-black transition"
+          className="flex items-center gap-2 mt-4 fontwfo border border-[#FFFFFF] text-[#FFFFFF] bg-transparent px-4 py-2 rounded-md hover:bg-[#FFFFFF] hover:text-black transition"
         >
           Submit
         </button>

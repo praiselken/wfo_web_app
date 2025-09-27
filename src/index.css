@@ -21,7 +21,7 @@
 /* Custom utilities */
 @layer components {
   .hero-button {
-    @apply flex items-center gap-2 mt-4 border border-[#CDF239] text-[#CDF239] bg-transparent px-4 py-2 rounded-md hover:bg-[#CDF239] hover:text-black transition;
+    @apply flex items-center gap-2 mt-4 border border-[#ffffff] text-[#FFFFFF] bg-transparent px-4 py-2 rounded-md hover:bg-[#FFFFFF] hover:text-black transition;
   }
 
   .fontwfo {

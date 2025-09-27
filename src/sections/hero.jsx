@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HomeInfo from "../components/HomeInfo";
+// import HomeInfo from "../components/HomeInfo";
 
 const Hero = () => {
   // Scroll handler for the FAQs button
@@ -22,21 +22,19 @@ const Hero = () => {
           {/* Title and Event Info */}
           <div className="md:m-3 m-2 flex flex-col justify-center items-start py-4 md:py-0">
             <div className="text-left space-y-3">
-              <h1 className="text-5xl lg:text-6xl font-bold fontwfo2 text-[#CDF239] leading-tight">
-                WFO
+              <h1 className="text-5xl lg:text-6xl font-bold fontwfo2 text-[#FFFFFF] leading-tight">
+                We Flew out.
                 <br />
-                The Experience
+                Broading Again.
               </h1>
-              <p className="text-[#CDF239] fontwfo xl:max-w-[500px]">
-                Join us in Marbella, Spain from MAY 23RD-26TH for the ultimate
-                Bank Holiday Experience
+              <p className="text-[#FFFFFF] fontwfo xl:max-w-[500px]">
+                Join us in Dubai for another holiday adventure!
               </p>
 
-              {/* Button Section */}
-              <div className="flex justify-center items-center gap-8 md:justify-start !mt-4">
-                <Link to="/tickets" className="hero-button fontwfo">
+              <div className="flex justify-center text-[#FFFFFF] items-center gap-8 md:justify-start !mt-4">
+                {/* <Link to="/tickets" className="hero-button fontwfo">
                   Get Tickets here
-                </Link>
+                </Link> */}
 
                 <button onClick={handleScroll} className="hero-button fontwfo">
                   FAQs & Intineary
@@ -45,7 +43,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <HomeInfo />
+        {/* <HomeInfo /> */}
       </section>
     </>
   );

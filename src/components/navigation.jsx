@@ -9,7 +9,7 @@ import wfoLogo from "../assets/img/whitewfo.svg";
 
 const navigation = [
   { name: "Home", to: "/home" },
-  { name: "Tickets", to: "/tickets" },
+  // { name: "Tickets", to: "/tickets" },
   { name: "Gallery", to: "/gallery" },
   { name: "Contact Us", to: "/contact_us" },
 ];
