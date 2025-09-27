@@ -22,7 +22,7 @@ const VideoBackground = () => {
         <h1
           className="font-extrabold uppercase text-center leading-tight"
           style={{
-            fontSize: "18vw", // min: 2rem (mobile), scales up with viewport, max: 12rem
+            fontSize: "clamp(4rem, 25vw, 20rem)", // min: 2rem (mobile), scales up with viewport, max: 12rem
             backgroundImage: `url(${videoBg})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
