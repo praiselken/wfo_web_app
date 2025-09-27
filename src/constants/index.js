@@ -2,21 +2,21 @@
 export const faqList = [
   {
     question: "Where Will All The Events be Based?",
-    answer: "The events are all in Marbella near the area of Puerto Banús.",
+    answer: "The events are all in Dubai",
   },
   {
     question: "Is there an age restriction for events?",
     answer: "Yes our events are 21+",
   },
 
-   {
-    question: "When are the payments due for instalment plans?",
-    answer: "Payment 2 is due on the 31st March and Payment 3 is due on the 30th April",
-  },
-  {
-    question: "If I Miss a payment for my instalment plan what will happen?",
-    answer: "Your ticket will be voided and you will not be refunded",
-  },
+  //  {
+  //   question: "When are the payments due for instalment plans?",
+  //   answer: "Payment 2 is due on the 31st March and Payment 3 is due on the 30th April",
+  // },
+  // {
+  //   question: "If I Miss a payment for my instalment plan what will happen?",
+  //   answer: "Your ticket will be voided and you will not be refunded",
+  // },
   {
     question: "Is there a dress code for each event?",
     answer: "Yes there is a Dress code and this is on the itinerary.",

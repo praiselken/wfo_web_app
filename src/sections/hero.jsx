@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import HomeInfo from "../components/HomeInfo";
+import HomeInfo from "../components/HomeInfo";
 
 const Hero = () => {
   // Scroll handler for the FAQs button
@@ -43,7 +43,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* <HomeInfo /> */}
+        <HomeInfo />
       </section>
     </>
   );
