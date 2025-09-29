@@ -20,22 +20,10 @@ const HomeInfo = () => {
             </h1>
           </header>
           <h2 className="text-xl lg:text-4xl font-bold fontwfo2 text-white leading-relaxed space-y-4">
-            <div>
-              26TH SEPT:
-              <br />
-              Bottomless Brunch 1–4PM
-              <br />
-              Day Party 5–10PM
-            </div>
             <div className="mt-6">
-              27TH SEPT:
+              30TH SEPT:
               <br />
-              Yacht Party 2–7PM
-            </div>
-            <div className="mt-6">
-              28TH SEPT:
-              <br />
-              JETSKI TAKEOVER FINALE 12–6PM
+              YACHT PARTY 12–6PM
             </div>
           </h2>
         </div>
